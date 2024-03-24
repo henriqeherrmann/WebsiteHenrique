@@ -81,3 +81,16 @@ footer {
     text-align: center;
     clear: both;
 }
+.container {
+    display: flex; /* Usa o layout flexível */
+    align-items: center; /* Alinha itens verticalmente */
+}
+
+.imagem {
+    flex: 0 0 auto; /* Define a largura da imagem conforme necessário */
+    margin-right: 20px; /* Margem à direita para separar a imagem do texto */
+}
+
+.texto {
+    flex: 1; /* O texto ocupa o restante do espaço disponível */
+}

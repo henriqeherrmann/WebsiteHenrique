@@ -8,18 +8,17 @@
     <title>Home</title>
     <!-- Aqui você pode adicionar links para folhas de estilo CSS ou scripts JavaScript -->
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <!-- O conteúdo da sua página vai aqui -->
     <header>
-        <h1>Meu Site</h1>
+        <h1>Henrique Valadão Herrmann</h1>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Trajetória Pessoal</a></li>
-                <li><a href="#">Trajetória Profissional</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'sobrePessoal' %}">Trajetória Pessoal</a></li>
+                <li><a href="{% url 'sobreProfissional' %}">Trajetória Profissional</a></li>
+                <li><a href="{% url 'contato' %}">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -27,7 +26,7 @@
     <main>
         <h2>Bem-vindo ao meu site!</h2>
         <p>Aqui você irá encontrar o meu currículo, incluindo minha trajetória pessoal e interesses e a minha carreira profissional, contendo as minhas formações e habilidades. <br>
-            Fique à vontade para entrar em contato. Estou à disposição!</p>
+            Fique à vontade para entrar em contato. Estou à disposição!</p> <br> 
     </main>
     
     <footer>
