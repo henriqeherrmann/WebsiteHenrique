@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre Pessoal</a></li>
+                <li><a href="#">Sobre Profissional</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Entre em Contato</h2>
+            <p>Por favor, preencha o formulário abaixo.</p> <br>
+            <form action="enviar.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required> <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required> <br><br>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Meu Site.</p>
+    </footer>
+</body>
+</html>
